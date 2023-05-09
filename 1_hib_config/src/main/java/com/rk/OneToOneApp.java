@@ -35,7 +35,7 @@ public class OneToOneApp {
 		openSession.save(ans2);
 		openSession.save(qst1);
 		openSession.save(qst2);
-		
+		tx.commit();
 		Question question = openSession.get(Question.class, 1);
 		System.out.println(question.getQuestion()+" "+question.getAnswer().getAnswer());
 		
