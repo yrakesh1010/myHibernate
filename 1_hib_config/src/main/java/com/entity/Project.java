@@ -3,6 +3,7 @@ package com.entity;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -16,7 +17,7 @@ public class Project {
 	
   private String pName;
 	
-    @ManyToMany(mappedBy = "pList")
+    @ManyToMany(mappedBy = "pList", fetch = FetchType.EAGER)
 	private List<Employee> eList;
 
 	public Project() {
