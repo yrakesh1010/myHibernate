@@ -17,6 +17,8 @@
 		<mapping class="com.entity.Answer"/>
 		<mapping class="com.entity.Country"/>
 		<mapping class="com.entity.StatesOfCountry"/>
+		<mapping class="com.entity.Employee"/>
+		<mapping class="com.entity.Project"/>
 	</session-factory>
 
 </hibernate-configuration>
