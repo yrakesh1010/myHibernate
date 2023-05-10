@@ -16,7 +16,7 @@ public class HqlApp_2_joins {
 		
 		Session openSession = factory.openSession();
 		Transaction txt = openSession.beginTransaction();
-		
+		//HQL query
 		String joinQuery = "select e.questionId,e.question, a.answer from Question e INNER JOIN e.answer a";
         Query createQuery = openSession.createQuery(joinQuery);
         List<Object[]> resultList = createQuery.getResultList();
